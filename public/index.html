@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<!--==========================================================================
+
+ Licensed Materials - Property of BP3
+
+  Bluemix REST Demo
+  Jonathan Jungck
+
+ Copyright © BP3 Global Inc. 2017. All Rights Reserved.
+ This software is subject to copyright protection under
+ the laws of the United States and other countries.
+
+============================================================================-->
+<html lang="en" ng-app="formExample" ng-strict-di>
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <!-- Override compatibility settings and force edge mode -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <title>Bluemix REST Demo</title>
+    <!-- Imports -->
+    <link href="web-resources/css/bootstrap.min.css" rel="stylesheet">
+    <link href="web-resources/css/font-awesome.min.css" rel="stylesheet">
+    <link href="web-resources/css/brazos-custom.css" rel="stylesheet">
+    <link href="web-resources/css/app.css" rel="stylesheet">
+    <link rel="icon" type="image/png" href="web-resources/img/favicon.ico">
+    <script src="http://code.angularjs.org/snapshot/angular.min.js"></script>
+</head>
+
+<body>
+    <!-- Brazos UI Header -->
+    <div class="header">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-5 col-sm-5">
+                    <div class="title">Watson Tone Analyzer</div>
+                    <div class="subtitle">Driven 2017 Bluemix Demo</div>
+                </div>
+                <div class="col-md-6 col-sm-6">
+                    <div class="logo-background"></div>
+                    <div class="logo"></div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Brazos UI Body -->
+    <div class="container" ng-controller="ExampleController">
+        <br>
+        <!-- Brazos UI Section -->
+        <div class="panel-group" id="accordion" role="tablist" aria-multiselectable="true">
+            <div class="panel panel-default">
+                <div class="panel-heading" role="tab" id="headingOne">
+                    <h4 class="panel-title">
+                        <!-- Brazos UI Section Header -->
+                        <a role="button" data-toggle="collapse" data-parent="#accordion" href="" aria-expanded="true" aria-controls="collapseOne">
+                            Send a Message to Watson
+                        </a>
+                    </h4>
+                </div>
+                <!-- Brazos UI Section Body -->
+                <div id="collapseOne" class="panel-collapse collapse in" role="tabpanel" aria-labelledby="headingOne">
+                    <div class="panel-body">
+                        <form novalidate class="simple-form">
+                            <label>Message</label><br>
+                                <textarea ng-model="message" rows="5" placeholder="Type a message to Watson and have it analyze your tone!"></textarea>
+                            <br>
+                            <div ng-if="messageBody">
+                                <div><label class="success">Tone Analysis</label></div>
+                                <div>{{messageBody}}</div>
+                            </div>
+                            <br>
+                            <!-- Brazos UI Buttons -->
+                            <input type="button" ng-click="clear()" value="Clear" class="brazos-button" />
+                            <input type="submit" ng-click="update(message)" value="Send" class="brazos-button" />
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Button Logic -->
+        <script>
+            angular.module('formExample', [])
+                .controller('ExampleController', ['$scope', '$http', function($scope, $http) {
+                    //$scope.master = {};
+                    show : boolean = false;
+
+                    $scope.update = function(message) {
+                        //$scope.master = angular.copy(message);
+
+                        $http.get('https://api.ipify.org?format=json')
+                            .then(function(result) {
+                                $scope.messageBody = result.data.ip;
+                                //$scope.messageBody = message;
+                            })
+                    };
+
+                    $scope.clear = function() {
+                        $scope.message = "";
+                        $scope.messageBody = angular.copy($scope.message);
+                    };
+
+                    $scope.clear();
+                }]);
+        </script>
+    </div>
+</body>
+
+</html>

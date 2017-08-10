@@ -1,0 +1,11 @@
+---
+applications:
+- disk_quota: 1024M
+  name: bp3driventestwebreact
+  domain: mybluemix.net
+  host: bp3-driven-test-webreact
+  memory: 256M
+  instances: 1
+  timeout: 180
+  buildpack: sdk-for-nodejs
+  command: npm start

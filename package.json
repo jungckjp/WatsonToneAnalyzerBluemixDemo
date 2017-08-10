@@ -1,0 +1,46 @@
+{
+  "name": "bp3driventestwebreact",
+  "version": "1.0.0",
+  "description": "A generated Bluemix application",
+  "license": "MIT",
+  "private": true,
+  "engines": {
+    "node": "^6.9.0"
+  },
+  "scripts": {
+    "postinstall": "./node_modules/.bin/gulp",
+    "start": "node server.js",
+    "debug": "node --nolazy --debug-brk=5858 server.js"
+  },
+  "dependencies": {
+    "babel-core": "^6.23.1",
+    "css-loader": "^0.26.2",
+    "sass-loader": "^6.0.2",
+    "style-loader": "^0.13.2",
+    "webpack": "^2.2.1",
+    "webpack-dev-server": "^2.4.1",
+    "gulp": "^3.9.1",
+    "gulp-shell": "^0.6.1",
+    "babel-eslint": "^7.1.1",
+    "babel-loader": "^6.3.2",
+    "babel-preset-es2015": "^6.22.0",
+    "babel-preset-react": "^6.23.0",
+    "babel-preset-stage-2": "^6.22.0",
+    "bulma": "^0.3.2",
+    "gulp-sass": "^3.1.0",
+    "lodash": "^4.17.4",
+    "webpack-stream": "^3.2.0",
+    "bluemix-appid": "*",
+    "bluemix-objectstorage": "*",
+    "passport": "^0.3.2",
+    "appmetrics-dash": "^3.0.0",
+    "bluemix-autoscaling-agent": "*",
+    "body-parser": "^1.17.0",
+    "cloudant": "^1.7.1",
+    "cfenv": "^1.0.3",
+    "express": "^4.14.0",
+    "express-session": "^1.15.0",
+    "react": "^15.4.2",
+    "react-dom": "^15.4.2"
+  }
+}

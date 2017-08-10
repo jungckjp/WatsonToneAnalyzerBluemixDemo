@@ -1,0 +1,103 @@
+/*============================================================================
+ *
+ * Licensed Materials - Property of BP3
+ *
+ *  Brazos Notifications
+ *
+ * Copyright © BP3 Global Inc. 2017. All Rights Reserved.
+ * This software is subject to copyright protection under
+ * the laws of the United States and other countries.
+ *
+ *===========================================================================*/
+body {
+    background-color: #eee;
+}
+
+.btn-group {
+    white-space: nowrap;
+}
+.btn-group .btn {
+    display: inline-block;
+    float: none;
+    clear: none;
+}
+
+.header {
+    background-color: #000;
+    padding-top: 16px;
+    padding-bottom: 16px;
+    width: 100%;
+    display: inline-block;
+    text-rendering: optimizelegibility;
+}
+
+.header .title {
+    color: #fff;
+    font-size: 38px;
+    line-height: 40px;
+    padding-top: 10px;
+}
+.header .subtitle {
+    color: #999;
+    font-size: 18px;
+}
+
+.header .logo {
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 190px;
+    height: 70px;
+    background-image: url(../img/bp3-logo.svg);
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+.header .logo-background {
+    opacity: 0.6;
+    height: 110px;
+    margin-right: 110px;
+    margin-top: -19px;
+    margin-bottom: -16px;
+    background-image: url(../img/bp3-stripes.svg);
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: right;
+}
+
+.header .logout {
+    text-align: right;
+    display: block;
+}
+
+body > .container .row {
+    padding-top: 15px;
+    padding-bottom: 15px;
+}
+
+.section {
+    background-color: #fff;
+    padding: 10px;
+    border: 1px solid #d3d3d3;
+}
+.section h4 {
+    margin-top: 0;
+}
+.section .table {
+    margin-bottom: 0;
+}
+
+.note {
+    color: #666;
+}
+
+.error {
+    color: #f55;
+}
+
+templates, variables, notifications {
+    display: block;
+}
+
+tr .form-group {
+    margin-bottom: initial;
+}

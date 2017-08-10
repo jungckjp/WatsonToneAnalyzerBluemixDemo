@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--==========================================================================
+
+  Licensed Materials - Property of BP3
+
+    Brazos UI
+
+  Copyright © BP3 Global Inc. 2010. All Rights Reserved.
+  This software is subject to copyright protection under
+  the laws of the United States and other countries.
+
+============================================================================-->
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+<svg version="1.1"
+	 id="svg3666" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns:cc="http://creativecommons.org/ns#" xmlns:svg="http://www.w3.org/2000/svg"
+	 xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="-153.8 97 287.3 201.1"
+	 enable-background="new -153.8 97 287.3 201.1" xml:space="preserve">
+<g id="layer1" transform="translate(0,-787.36218)">
+	<g id="g3554" transform="matrix(1.25,0,0,-1.25,99.128887,785.54271)">
+		<path id="path3556" fill="#808080" d="M-143.8-78h-25l-16.8-81l-16.8-81h25l16.8,81L-143.8-78z"/>
+	</g>
+	<g id="g3558" transform="matrix(1.25,0,0,-1.25,156.23714,785.54271)">
+		<path id="path3560" fill="#808080" d="M-155.2-78h-25l-16.8-81l-16.8-81h25l16.8,81L-155.2-78z"/>
+	</g>
+	<g id="g3562" transform="matrix(1.25,0,0,-1.25,213.34527,785.54271)">
+		<path id="path3564" fill="#808080" d="M-166.7-78h-25l-16.8-81l-16.8-81h25l16.8,81L-166.7-78z"/>
+	</g>
+	<g id="g3566" transform="matrix(1.25,0,0,-1.25,270.45214,785.54271)">
+		<path id="path3568" fill="#808080" d="M-178.1-78h-25l-16.8-81l-16.8-81h25l16.8,81L-178.1-78z"/>
+	</g>
+	<g id="g3570" transform="matrix(1.25,0,0,-1.25,327.56027,785.54271)">
+		<path id="path3572" fill="#808080" d="M-189.5-78h-25l-16.8-81l-16.8-81h25l16.8,81L-189.5-78z"/>
+	</g>
+	<g id="g3574" transform="matrix(1.25,0,0,-1.25,384.66602,785.54271)">
+		<path id="path3576" fill="#808080" d="M-200.9-78h-25l-16.8-81l-16.8-81h25l16.8,81L-200.9-78z"/>
+	</g>
+</g>
+</svg>
