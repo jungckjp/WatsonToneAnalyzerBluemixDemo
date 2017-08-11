@@ -9,6 +9,10 @@
     border-top-right-radius: 7px;
 }
 
+.panel-heading:hover {
+  background-color:#bd5e18;
+}
+
 .panel-default>.panel-inner {
     border-radius:7px;
 }
